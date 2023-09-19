@@ -1,0 +1,76 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xffC50E01C7C178AaB230819E31d2CB1578d2bA4c",
+    "txHash": "0x4be250141813a4bfe352bd863099a65b478480574e244a73365046a851618a29"
+  },
+  "proxies": [
+    {
+      "address": "0x7C9089CF40b919e939E491c9C444E9776D7156C0",
+      "txHash": "0x0a4c9af141be619f0ede41e60fb88232a21d16e5399147734e0555794f9d920f",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a48d00f38afb56cfc88da375a59083be238b93057a8cd0dcf1a166d46d9cc20e": {
+      "address": "0x23CaBE25584731C126973013A969e77703d2b0B7",
+      "txHash": "0x6731dac54fb1fd60c68fb1dba96899f46ef9947a3df0936d9d5a1f7a005b15b9",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "CardService",
+            "src": "contracts/CardService.sol:10"
+          },
+          {
+            "label": "receiver",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address_payable",
+            "contract": "CardService",
+            "src": "contracts/CardService.sol:11"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
